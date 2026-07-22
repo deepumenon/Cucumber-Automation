@@ -11,3 +11,4 @@ Feature: Add product to cart
       | username             | password | product    | quantity | Name on Card | Card Number      | CVC | Month | Year |
       | deepak1223@gmail.com | Deepak   | Men Tshirt | 2        | Deepak       | 7854125963014587 | 478 | 05    | 2028 |
       | deepak1223@gmail.com | Deepak   | Tshirt     | 5        | Deepak       | 7854125963014587 | 478 | 05    | 2028 |
+      | deepak1223@gmail.com | Deepak   | Tshirt     | 5        | Deepak       | 7854125963014588 | 479 | 06    | 2029 |

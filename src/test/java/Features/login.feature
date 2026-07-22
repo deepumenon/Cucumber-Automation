@@ -9,6 +9,7 @@ Feature: Login to application with valid and invalid credentials
     And user enters the password as "Deepak"
     When user clicks the login button
     Then login should be success
+    
 @smoke
   Scenario: Login should be fail
     And user enters the username as "deepak12243@gmail.com"
