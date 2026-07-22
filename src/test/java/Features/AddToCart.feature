@@ -12,3 +12,4 @@ Feature: Add product to cart
       | deepak1223@gmail.com | Deepak   | Men Tshirt | 2        | Deepak       | 7854125963014587 | 478 | 05    | 2028 |
       | deepak1223@gmail.com | Deepak   | Tshirt     | 5        | Deepak       | 7854125963014587 | 478 | 05    | 2028 |
       | deepak1223@gmail.com | Deepak   | Tshirt     | 5        | Deepak       | 7854125963014588 | 479 | 06    | 2029 |
+      | deepak1223@gmail.com | Deepak   | Tshirt     | 5        | Deepak       | 7854125963014589 | 479 | 07    | 2029 |
