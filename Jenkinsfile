@@ -4,7 +4,7 @@ pipeline {
     tools {
         // These names MUST match the tool names in your Jenkins Global Tool Configuration
         maven 'Maven 3.x'
-        jdk 'JDK 17'
+        jdk 'JDK 21'
     }
 
     stages {
