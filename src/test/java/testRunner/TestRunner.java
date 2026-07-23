@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 		        "html:target/cucumber-reports.html",
 		        "json:target/cucumber.json", // <-- THIS IS REQUIRED FOR JENKINS
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-		//tags = "@smoke"
+		//tags = "@smoke and tester"
 		
 		
 		)
