@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">BDD Tests</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 15, 2026 11:48:11</span></a>
+<a href="#"><span class="badge badge-primary">Jul 23, 2026 14:05:15</span></a>
 </li>
 </ul>
 </div>
@@ -98,7 +98,7 @@
           <div class="test-detail">
             <p class="name">Add product to cart</p>
             <p class="text-sm">
-              <span>11:48:11 am</span> / <span>00:00:34:160</span>
+              <span>2:05:16 pm</span> / <span>00:02:02:088</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -107,9 +107,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Add product to cart</h5>
-<span class='badge badge-success'>07.15.2026 11:48:11 am</span>
-<span class='badge badge-danger'>07.15.2026 11:48:46 am</span>
-<span class='badge badge-default'>00:00:34:160</span>
+<span class='badge badge-success'>07.23.2026 2:05:16 pm</span>
+<span class='badge badge-danger'>07.23.2026 2:07:18 pm</span>
+<span class='badge badge-default'>00:02:02:088</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -132,10 +132,13 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Add procduct to cart</div>
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Add procduct to cart</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
+              <div class="card-body mt-3 ">
                   <div class="step pass-bg">
                     <span>And login to application as "deepak1223@gmail.com" and "Deepak"</span>
       <div>
@@ -146,13 +149,57 @@
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>When User should add the product to cart</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/product_details/2" style="color: brown;">...</a> is not clickable at point (626, 655). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260721/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJOZ3pqy6JUDFTLHGwAdGvsZFw" data-load-complete="true"></iframe>
+  (Session info: chrome=149.0.7827.196)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85801c08a333a33f12b68b92e1367efd, clickElement {id=f.8E9138810C1A2706F3588E1A6A5059AE.d.4E68DA9A3E226930BCB7E1B27C834E15.e.271}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.196, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\deepa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52382}, goog:processID: 54180, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52382/devtoo..., se:cdpVersion: 149.0.7827.196, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85801c08a333a33f12b68b92e1367efd)] -> xpath: (//a[contains(text(),'View Product')])[1]]
+Session ID: 85801c08a333a33f12b68b92e1367efd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.ProductsPage_Elements.viewproduct(ProductsPage_Elements.java:51)
+	at stepDefinition.AddtoCart.userShouldAddTheProductToCart(AddtoCart.java:53)
+	at ✽.User should add the product to cart(file:///C:/Users/deepa/eclipse-workspace/CucumberARTID/src/test/java/Features/AddToCart.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then verify product added to cart "Men Tshirt"</span>
+      <div>Step skipped
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then verify product added to cart "Men Tshirt"</span>
+                    <span>hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+  
+    
+
+    </div></div>
+</div>
       <div>
       </div>
                   </div>
@@ -178,25 +225,43 @@
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>When User should add the product to cart</span>
       <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>Then verify product added to cart "Tshirt"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [Tshirt] but found [Men Tshirt]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinition.AddtoCart.verifyProductAddedToCart(AddtoCart.java:65)
-	at ✽.verify product added to cart "Tshirt"(file:///C:/Users/deepa/eclipse-workspace/CucumberARTID/src/test/java/Features/AddToCart.feature:8)
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/product_details/2" style="color: brown;">...</a> is not clickable at point (626, 655). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260721/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="COa3sLmy6JUDFceVRgQd8hkICg" data-load-complete="true"></iframe>
+  (Session info: chrome=149.0.7827.196)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a328ff2e79e2cc7cd60421adb432335b, clickElement {id=f.47882D9CAA2469F15CC485A65D0BEBEB.d.24ABC9A66994A55952E30B122C8C0395.e.1120}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.196, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\deepa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52018}, goog:processID: 56196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52018/devtoo..., se:cdpVersion: 149.0.7827.196, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a328ff2e79e2cc7cd60421adb432335b)] -> xpath: (//a[contains(text(),'View Product')])[1]]
+Session ID: a328ff2e79e2cc7cd60421adb432335b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.ProductsPage_Elements.viewproduct(ProductsPage_Elements.java:51)
+	at stepDefinition.AddtoCart.userShouldAddTheProductToCart(AddtoCart.java:53)
+	at ✽.User should add the product to cart(file:///C:/Users/deepa/eclipse-workspace/CucumberARTID/src/test/java/Features/AddToCart.feature:7)
 </textarea>
       
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then verify product added to cart "Tshirt"</span>
+      <div>Step skipped
       </div>
                   </div>
                   <div class="step pass-bg">
@@ -205,7 +270,7 @@
           <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
   
     
 
@@ -228,7 +293,7 @@
           <div class="test-detail">
             <p class="name">Login to application with valid and invalid credentials</p>
             <p class="text-sm">
-              <span>11:48:46 am</span> / <span>00:00:12:775</span>
+              <span>2:07:18 pm</span> / <span>00:00:15:528</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -237,9 +302,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login to application with valid and invalid credentials</h5>
-<span class='badge badge-success'>07.15.2026 11:48:46 am</span>
-<span class='badge badge-danger'>07.15.2026 11:48:58 am</span>
-<span class='badge badge-default'>00:00:12:775</span>
+<span class='badge badge-success'>07.23.2026 2:07:18 pm</span>
+<span class='badge badge-danger'>07.23.2026 2:07:34 pm</span>
+<span class='badge badge-default'>00:00:15:528</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -344,15 +409,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -365,11 +430,21 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:48:44 am</td>
+<td>14:06:12 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='30'>Then verify product added to cart "Tshirt"</a>
+<a href="#" class="linked" test-id='1' id='12'>When User should add the product to cart</a>
 <div class="">
-<span class="badge badge-default">Add product to cart.Add procduct to cart.Then verify product added to cart "Tshirt"</span>
+<span class="badge badge-default">Add product to cart.Add procduct to cart.When User should add the product to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:07:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>When User should add the product to cart</a>
+<div class="">
+<span class="badge badge-default">Add product to cart.Add procduct to cart.When User should add the product to cart</span>
 </div>
 </td>
 </tr>
@@ -396,8 +471,8 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">@smoke</p>
 <p class="duration text-sm">3 tests</p>
@@ -405,8 +480,8 @@
 <div class="test-contents d-none">
 <div class="info">
 <h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -417,9 +492,9 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:48:11 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:05:16 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>Add procduct to cart</a>
 <div class="">
@@ -429,7 +504,7 @@
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:48:28 am</td>
+<td>14:06:14 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='18'>Add procduct to cart</a>
 <div class="">
@@ -439,7 +514,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:48:52 am</td>
+<td>14:07:27 pm</td>
 <td>
 <a href="#" class="linked" test-id='33' id='52'>Login should be fail</a>
 <div class="">
@@ -464,13 +539,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 15, 2026 11:48:11</h3>
+<h3>Jul 23, 2026 14:05:15</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 15, 2026 11:48:58</h3>
+<h3>Jul 23, 2026 14:07:34</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -521,9 +596,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='75%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='50%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='25%'><b>1</b> scenarios failed,
+<small data-tooltip='50%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -541,10 +616,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='94%'><b>18</b> steps passed</small></div>
+<div><small data-tooltip='80%'><b>16</b> steps passed</small></div>
 <div>
-<small data-tooltip='5%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='10%'><b>2</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -560,7 +635,7 @@
 </div></div>
 <script>
 var timeline = {
-"Add product to cart":34.16,"Login to application with valid and invalid credentials":12.775
+"Add product to cart":122.088,"Login to application with valid and invalid credentials":15.528
 };
 </script>
 <div class="row">
@@ -571,11 +646,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@smoke</td>
-<td>2</td>
 <td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>66.667%</td>
+<td>33.333%</td>
 </tr>
 </tbody>
 </table></div>
@@ -621,16 +696,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
-failChild: 1,
+passChild: 2,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 18,
-failGrandChild: 1,
+passGrandChild: 16,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };

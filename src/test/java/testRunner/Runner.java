@@ -11,6 +11,9 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 		snippets = SnippetType.CAMELCASE,
 		monochrome = true,
 		plugin = {
+				"pretty",
+		        "html:target/cucumber-reports.html",
+		        "json:target/cucumber.json", // <-- THIS IS REQUIRED FOR JENKINS
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		//tags = "@smoke"
 		
