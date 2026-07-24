@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(
-		features= {"src/test/java/Features/login.feature"} ,
+		features= {"src/test/java/Features"} ,
 		dryRun = false,
 		glue = {"stepDefinition", "hooks"},
 		snippets = SnippetType.CAMELCASE,
