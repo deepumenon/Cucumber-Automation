@@ -37,15 +37,9 @@ pipeline {
                      jsonReportDirectory: 'target'
         }
         failure {
-            // Send email notification on failure
-            emailext body: """
-                <p><strong>ALERT:</strong> Jenkins Build Failed!</p>
-                <p>Project: ${env.JOB_NAME}</p>
-                <p>Build Number: #${env.BUILD_NUMBER}</p>
-                <p>URL: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
-                """,
-                subject: "FAILED: Job '${env.JOB_NAME}' [Build #${env.BUILD_NUMBER}]",
-                to: "neopappu114@gmail.com" // Replace with your email address
-        }
+        mail to: 'deepakbabu513@gmail.com', // or whichever email you want to receive alerts
+             subject: "BUILD FAILED: ${env.JOB_NAME} [Build #${env.BUILD_NUMBER}]",
+             body: "Attention! The Jenkins job ${env.JOB_NAME} build #${env.BUILD_NUMBER} has failed.\nCheck details at: ${env.BUILD_URL}"
+    }
     }
 }
