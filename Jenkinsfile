@@ -45,7 +45,7 @@ pipeline {
                 <p>URL: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
                 """,
                 subject: "FAILED: Job '${env.JOB_NAME}' [Build #${env.BUILD_NUMBER}]",
-                to: "deepakbabu513@gmail.com" // Replace with your email address
+                to: "neopappu114@gmail.com" // Replace with your email address
         }
     }
 }
