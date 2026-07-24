@@ -2,15 +2,14 @@ pipeline {
     agent any
 
     tools {
-        // These names MUST match the tool names in your Jenkins Global Tool Configuration
         maven 'Maven 3.x'
-        jdk 'JDK 21'
+        jdk 'JDK 21' // Match your JDK version configured in Jenkins Tools
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                echo 'Fetching latest code from GitHub...'
+                echo 'Pulling code from GitHub...'
                 checkout scm
             }
         }
@@ -18,13 +17,13 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compiling Java classes...'
-                bat 'mvn clean compile' // Use 'sh' if running Jenkins on Mac/Linux
+                bat 'mvn clean compile'
             }
         }
 
         stage('Run Cucumber Tests') {
             steps {
-                echo 'Executing Cucumber Automation Tests...'
+                echo 'Running Cucumber Test Suite...'
                 bat 'mvn test'
             }
         }
@@ -32,10 +31,21 @@ pipeline {
 
     post {
         always {
-            // Generates the HTML report on Jenkins
+            // Generate visual Cucumber HTML report
             cucumber buildStatus: 'UNSTABLE', 
-                     fileIncludePattern: '**/cucumber.json', 
+                     fileIncludePattern: '**/*.json', 
                      jsonReportDirectory: 'target'
+        }
+        failure {
+            // Send email notification on failure
+            emailext body: """
+                <p><strong>ALERT:</strong> Jenkins Build Failed!</p>
+                <p>Project: ${env.JOB_NAME}</p>
+                <p>Build Number: #${env.BUILD_NUMBER}</p>
+                <p>URL: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
+                """,
+                subject: "FAILED: Job '${env.JOB_NAME}' [Build #${env.BUILD_NUMBER}]",
+                to: "your-email@gmail.com" // Replace with your email address
         }
     }
 }
